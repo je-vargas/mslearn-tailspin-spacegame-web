@@ -63,7 +63,7 @@ stages:
             artifact: drop
   - stage: 'Deploy'
     displayName: 'Deploy the web application'
-    dependensOn: Build
+    dependsOn: Build
     jobs:
       - deployment: Deploy
         pool:
